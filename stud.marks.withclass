@@ -1,0 +1,15 @@
+class student:
+    def __init__(self):
+        self.name=int(input("name: ")
+        self.stuid=int(input(:stuid: ")
+    def marks(self):
+        a=int(input("telugu:")
+        b=int(input("eng:")
+        c=int(input("hin:")
+        d=int(input("math:")
+        e=int(input("sci:")
+        f=int(input("soc:")
+        avg=(a+b+c+d+e+f)/6
+        return avg
+stu=student()
+stu.marks()
