@@ -1,0 +1,73 @@
+"""
+def ratriangle(n):
+    for i in range(1,n+1):
+        print("* "*i)
+ratriangle(5)
+"""
+"""
+def Iratriangle(n):
+    for i in range(n,0,-1):
+        print("* "*i)
+Iratriangle(5)
+"""
+"""
+def pyramid(n):
+    for i in range(1,n+1):
+        spaces=" "*(n-i)
+        stars="*"*(i*2-1)
+        print(spaces+stars)
+pyramid(5)
+"""
+"""
+def diamond(n):
+    for i in range(1,n+1):
+        spaces=" "*(n-i)
+        stars="*"*(i*2-1)
+        print(spaces+stars)
+    for j in range(n-1,0,-1):
+        spaces=" "*(n-j)
+        stars="*"*(j*2-1)
+        print(spaces+stars)
+diamond(3)
+"""
+"""
+def hourglass(n):
+    for i in range(n,0,-1):
+        #print(i)
+        space=" "*(n-i)
+        stars="*"*(i*2-1)
+        print(space+stars)
+    for j in range(1,n):
+        space=" "*(n-j-1)
+        stars="*"*(j*2+1)
+        print(space+stars)
+hourglass(5)
+"""
+"""
+def floyds(n):
+    for i in range(n):
+        for j in range(n):
+            print((i+j)%n+1,end=" ")
+        print()
+floyds(5)
+"""
+"""
+def floyds(n):
+    for i in range(1,n+1):
+        for j in range(0,i):
+            print(j+i,end=" ")
+        print()
+floyds(5)
+
+def floyds(n):
+    num=0
+    for i in range(1,n+1):
+        for j in range(0,i):
+            print(num,end=" ")
+            num+=1
+        print()
+"""
+def zig(n):
+    for i in range(n,0,-1):
+        print((" "*(n-i))+"*"+(" "*(i*2-1))+"*")
+zig(5)
